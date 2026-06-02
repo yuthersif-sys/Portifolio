@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asefa Moges Nigatu | Network Engineer</title>
+
+<style>
+:root{
+    --primary:#0f172a;
+    --secondary:#1e293b;
+    --accent:#0ea5e9;
+    --bg:#f8fafc;
+    --text:#334155;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:white;
+    color:var(--text);
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:white;
+    padding:70px 20px;
+}
+
+.hero{
+    max-width:1100px;
+    margin:auto;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.hero p{
+    margin-top:10px;
+    opacity:0.9;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 18px;
+    background:var(--accent);
+    color:white;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+/* SECTIONS */
+section{
+    padding:60px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:30px;
+    color:var(--primary);
+}
+
+/* GRID (cards style like first design) */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:var(--bg);
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* SKILLS */
+.skill{
+    margin-bottom:15px;
+}
+
+.bar{
+    height:10px;
+    background:#e2e8f0;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.fill{
+    height:10px;
+    width:0;
+    background:var(--accent);
+    animation:load 2s forwards;
+}
+
+@keyframes load{
+    from{width:0;}
+    to{width:var(--w);}
+}
+
+/* EXPERIENCE TIMELINE */
+.timeline{
+    border-left:4px solid var(--accent);
+    padding-left:20px;
+}
+
+.item{
+    margin-bottom:25px;
+}
+
+/* CONTACT */
+.contact-box{
+    text-align:center;
+}
+
+.contact-box p{
+    margin:8px 0;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input, textarea{
+    padding:10px;
+    border:1px solid #cbd5e1;
+    border-radius:5px;
+}
+
+button{
+    padding:10px;
+    background:var(--accent);
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:var(--primary);
+    color:white;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h1{font-size:1.8rem;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="hero">
+        <h1>Asefa Moges Nigatu</h1>
+        <p>Senior Network Administrator | IT Infrastructure & Security Specialist</p>
+        <a class="btn" href="CV.pdf" download>Download CV</a>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section>
+    <div class="container">
+        <h2 class="title">Professional Summary</h2>
+        <div class="card">
+            Highly organized Network Administrator with 8+ years of experience in enterprise IT environments.
+            Skilled in LAN/WAN/WLAN, firewall configuration, VPN setup, cloud networking, and IT infrastructure
+            optimization. Strong problem solver with leadership experience and attention to system reliability.
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <div class="container">
+        <h2 class="title">Technical Skills</h2>
+
+        <div class="skill">
+            <p>Network Administration & Security</p>
+            <div class="bar"><div class="fill" style="--w:95%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>Routing & Switching</p>
+            <div class="bar"><div class="fill" style="--w:92%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>LAN / WAN / WLAN</p>
+            <div class="bar"><div class="fill" style="--w:94%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>Firewall & VPN Configuration</p>
+            <div class="bar"><div class="fill" style="--w:90%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>Cloud Networking</p>
+            <div class="bar"><div class="fill" style="--w:80%"></div></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <div class="container">
+        <h2 class="title">Projects</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Enterprise Network Setup</h3>
+                <p>Designed and maintained secure LAN/WAN infrastructure for corporate environment.</p>
+            </div>
+
+            <div class="card">
+                <h3>Firewall & VPN Implementation</h3>
+                <p>Configured secure VPN tunnels and firewall rules for branch connectivity.</p>
+            </div>
+
+            <div class="card">
+                <h3>IT Infrastructure Support</h3>
+                <p>Managed servers, backups, and network monitoring systems.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+    <div class="container">
+        <h2 class="title">Work Experience</h2>
+
+        <div class="timeline">
+
+            <div class="item">
+                <h3>Senior Network Administrator III</h3>
+                <p><b>ASKU PLC</b> | 2022 – Present</p>
+                <p>LAN/WAN management, monitoring, security, and branch network support.</p>
+            </div>
+
+            <div class="item">
+                <h3>IT & HR Vice Manager</h3>
+                <p><b>Everest Apparel</b> | 2019 – 2021</p>
+                <p>IT operations, payroll systems, HR coordination, and team leadership.</p>
+            </div>
+
+            <div class="item">
+                <h3>IT Section Chief</h3>
+                <p><b>Everest Apparel</b> | 2017 – 2019</p>
+                <p>Network support, firewall management, ERP systems, CCTV installation.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+    <div class="container contact-box">
+        <h2 class="title">Contact</h2>
+
+        <p><b>Email:</b> yuthersif@gmail.com</p>
+        <p><b>Phone:</b> +251910420605</p>
+        <p><b>Location:</b> Addis Ababa, Ethiopia</p>
+
+        <br><br>
+
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 Asefa Moges Nigatu | Professional Portfolio
+</footer>
+
+</body>
+</html>
